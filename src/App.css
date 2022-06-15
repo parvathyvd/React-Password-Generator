@@ -1,0 +1,93 @@
+*,::after,::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-family: 'Courier New', Courier, monospace;
+  background: #834d9b; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #834d9b, #d04ed6); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #834d9b, #d04ed6); 
+    font-size: 62.5%;
+}
+
+body{
+  width: 100%;
+  min-height: 100vh;
+  color: #fff;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1{
+  font-size: 2.1rem;
+  text-transform: uppercase;
+  padding-bottom: 0rem;
+}
+.password-wrapper{
+ width: 35rem;
+ background: #AA076B;  /* fallback for old browsers */
+ background: -webkit-linear-gradient(to right, #61045F, #AA076B);  /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to right, #61045F, #AA076B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 1.2rem;
+  box-shadow: 1rem 1rem 5rem rgba(0, 0, 0, 0.553);
+
+}
+.pw-field{
+  width: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.pwd-body{
+  margin: 2rem auto;
+}
+.pwd {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-family: inherit;
+  color: black;
+}
+.copy{
+  text-align: right;
+  background: purple;
+  outline: none;
+  offset: none;
+  border: none;
+  color: #fff;
+  padding: 0.2rem 0.3rem;
+  opacity: 0;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+.form-control{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+}
+.pwd-length{
+  width: 4rem;
+}
+.generate{
+  color: #fff;
+  background: purple;
+  outline: none;
+  offset: none;
+  border: none;
+  padding: 0.9rem 0.5rem;
+  width: 100%;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.pw-field:hover .copy{
+  opacity: 1;
+}
+.small{
+  font-size: 1rem;
+  display: block;
+  padding-bottom: 1rem;
+}
